@@ -112,11 +112,11 @@ button:focus {
   outline: 0 !important;
 }
 
-.navbar-toggler span:nth-child(1),
-.navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
-}
+/*.navbar-toggler span:nth-child(1),*/
+/*.navbar-toggler span:nth-child(3) {*/
+/*  transition: transform 0.35s ease-in-out !important;*/
+/*  transition: transform 0.35s ease-in-out !important;*/
+/*}*/
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute !important;
@@ -178,6 +178,7 @@ button:focus {
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
+
 }
 
 .navbar-nav .nav-item a {
@@ -565,18 +566,29 @@ button:focus {
 }
 
 .tech-icons {
-  font-size: 4.5em !important;
+  font-size: 3em !important;
   margin: 15px !important;
-  padding: 10px !important;
+  padding: 12px 0 12px 20px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(137, 180, 230, 0.64) !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(4, 75, 168, 0.13) !important;
+  border: 1px solid rgba(137, 180, 230, 0.64) !important;
+  text-align: left !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  transition: all 0.2s ease 0s !important;
+}
+
+.tech-icons-text{
+  font-size: 0.5em !important;
+  height: 100%;
+  width: 100%;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 @media (max-width: 767px) {
@@ -588,7 +600,8 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(115, 140, 230, 0.88) !important;
+  border: 1px solid rgba(115, 140, 230, 0.88) !important;
+  box-shadow: 0px 3px 5px 3px rgba(4, 75, 168, 0.13) !important;
 }
 .tech-icon-images {
   padding: 20px !important;

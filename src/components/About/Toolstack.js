@@ -6,27 +6,34 @@ import {BsGithub, BsTrello} from "react-icons/bs";
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiWindows />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiIntellijidea />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDiscord />
-      </Col>
         <Col xs={4} md={2} className="tech-icons">
-        <BsGithub/>
-      </Col>
+            <SiWindows/>
+            <p className="tech-icons-text">Windows</p>
+        </Col>
         <Col xs={4} md={2} className="tech-icons">
-        <BsTrello/>
-      </Col>
+            <SiVisualstudiocode/>
+            <p className="tech-icons-text">VS Code</p>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiIntellijidea/>
+            <p className="tech-icons-text">Intellij IDEA</p>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiSlack/>
+            <p className="tech-icons-text">Slack</p>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiDiscord/>
+            <p className="tech-icons-text">Discord</p>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <BsGithub/>
+            <p className="tech-icons-text">GitHub</p>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <BsTrello/>
+            <p className="tech-icons-text">Trello</p>
+        </Col>
     </Row>
   );
 }
