@@ -467,6 +467,7 @@ button:focus {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
@@ -504,10 +505,14 @@ button:focus {
   box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
 }
 
+.project-card-container{
+  margin: 20px;
+}
+
 .card-img-top {
-  padding: 20px !important;
   opacity: 0.8 !important;
-  border-radius: 10px !important;
+  border-radius: 20px !important;
+  background-color: #8a49a8;
 }
 
 .blog-img {
