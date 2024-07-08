@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import educaStream from "../../Assets/Projects/educaStream.jpg";
 import flexwork from "../../Assets/Projects/flexwork.png";
+import gip360 from "../../Assets/Projects/gip360.PNG";
 
 function Projects() {
   return (
@@ -17,6 +18,29 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+                imgPath={gip360}
+                isBlog={false}
+                title="GIP 360 (in progress)"
+                description="This project aims to assist small and medium-sized business owners with stock control, sales, taxes, employee management, billing, taxes, and
+                statistics to offer a clear vision of their business operations."
+                ghLink="https://github.com/FacundoLizardo/Sistema-Ventas"
+                demoLink="https://gip360.vercel.app//"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+                imgPath={gip360}
+                isBlog={false}
+                title="GIP 360 (in progress)"
+                description="This project aims to assist small and medium-sized business owners with stock control, sales, taxes, employee management, billing, taxes, and
+                statistics to offer a clear vision of their business operations."
+                ghLink="https://github.com/FacundoLizardo/Sistema-Ventas"
+                demoLink="https://gip360.vercel.app//"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
