@@ -310,6 +310,11 @@ button:focus {
   padding-top: 9em !important;
 }
 
+.main-image-avatar1{
+  z-index: 99;
+  opacity:1;
+}
+
 @media (max-width: 767px) {
   .myAvtar {
     padding-top: 2em !important;
@@ -323,6 +328,11 @@ button:focus {
   padding-top: 70px !important;
 }
 
+.profilepic{
+  border-radius: 50%;
+  height: 400px;
+  opacity: 0.9;
+}
 .home-about-description {
   color: white !important;
   padding-top: 100px !important;
