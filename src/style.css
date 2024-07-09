@@ -437,6 +437,7 @@ max-width: 300px;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
+  font-family: "Lucida Console";
 }
 .footer-copywright {
   text-align: center !important;
@@ -444,7 +445,7 @@ max-width: 300px;
 
 .footer-body {
   z-index: 1;
-  text-align: center !important;
+  text-align: right !important;
 }
 
 @media (max-width: 767px) {
@@ -459,7 +460,7 @@ max-width: 300px;
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: #9b9b9b !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
