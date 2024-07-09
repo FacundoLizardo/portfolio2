@@ -34,7 +34,6 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                style={{ maxHeight: "450px" }}
                 className={'main-image-avatar1'}
               />
             </Col>

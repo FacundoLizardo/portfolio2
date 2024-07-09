@@ -86,12 +86,14 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/FacundoLizardo/Portfolio2"
-                target="_blank"
-                className="fork-btn-inner"
+                  href="https://github.com/FacundoLizardo/Portfolio2"
+                  target="_blank"
+                  className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <div style={{display: 'flex',flexDirection:'row', gap:'5px', fontSize:'1.2em'}}>
+                  <CgGitFork style={{fontSize: "1.2em"}}/>
+                  <p className="tech-icons-text" style={{fontSize:'2em'}}>This repository</p>
+                </div>
               </Button>
             </Nav.Item>
           </Nav>

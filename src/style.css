@@ -112,11 +112,11 @@ button:focus {
   outline: 0 !important;
 }
 
-/*.navbar-toggler span:nth-child(1),*/
-/*.navbar-toggler span:nth-child(3) {*/
-/*  transition: transform 0.35s ease-in-out !important;*/
-/*  transition: transform 0.35s ease-in-out !important;*/
-/*}*/
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  transition: transform 0.35s ease-in-out !important;
+  transition: transform 0.35s ease-in-out !important;
+}
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute !important;
@@ -192,14 +192,14 @@ button:focus {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  height: 2px;
   width: 0;
   border-radius: 16px;
   background: #5b9ef5;
   bottom: 1px;
   left: 0;
   z-index: -1;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
 }
 
 .navbar-nav .nav-item a:hover::after {
@@ -313,8 +313,13 @@ button:focus {
 .main-image-avatar1{
   z-index: 99;
   opacity:1;
+  max-width: 450px;
 }
-
+@media (max-width: 767px) {
+  .main-image-avatar1 {
+max-width: 300px;
+  }
+}
 @media (max-width: 767px) {
   .myAvtar {
     padding-top: 2em !important;
@@ -370,7 +375,7 @@ button:focus {
   line-height: 2em !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
-  transition: 0.5s !important;
+  transition: 0.2s !important;
 }
 
 .home-social-icons::before {
@@ -382,7 +387,7 @@ button:focus {
   height: 100%;
   border-radius: 50%;
   background: #183f7a;
-  transition: 0.5s;
+  transition: 0.2s;
   transform: scale(0.9);
   z-index: -1;
 }
@@ -471,24 +476,16 @@ button:focus {
 
 .project-card-view {
   /*box-shadow: 0 0 5px 2px rgba(153, 156, 161, 0.46) !important;*/
-  color: white !important;
+  color: #e0e0e0 !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
+  transition: all 0.2s ease-in-out 0s !important;
   height: 100% !important;
-}
-
-.project-card-view:hover {
-  box-shadow: 1px 1px 10px 2px rgba(45, 48, 56, 0.46) !important;
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
+  border: transparent 1px;
 }
 
 .blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding: 50px 25px !important;
   height: auto !important;
 }
 
@@ -521,8 +518,12 @@ button:focus {
 
 .card-img-top {
   opacity: 0.8 !important;
-  border-radius: 20px !important;
+  border-radius: 8px !important;
   background-color: #496aa8;
+  transition: all ease-in-out 0.2s;
+}
+.card-img-top:hover {
+scale: 1.05;
 }
 
 .blog-img {
@@ -753,17 +754,19 @@ button:focus {
 }
 
 .fork-btn-inner {
-  line-height: 1.4em !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
   background-color: rgba(76, 121, 206, 0.37) !important;
   padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
+  transition: all ease-in-out 0.1s;
 }
 
 .fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
   background-color: rgba(77, 131, 211, 0.53) !important;
   border-color: rgba(77, 131, 211, 0.53) !important;
+  scale: 1.05;
 }
 .fork-btn-inner::after {
   display: none !important;

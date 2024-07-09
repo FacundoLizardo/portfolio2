@@ -1,10 +1,10 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import avatar from "../../Assets/avatar.webp";
 import Tilt from "react-parallax-tilt";
-import {AiFillGithub, AiFillInstagram, AiOutlineTwitter,} from "react-icons/ai";
+import {AiFillGithub, AiFillInstagram} from "react-icons/ai";
 import {FaLinkedinIn} from "react-icons/fa";
+import {SiGmail} from "react-icons/si";
 
 function Home2() {
   return (
@@ -76,7 +76,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <SiGmail />
                 </a>
               </li>
               <li className="social-icons">
