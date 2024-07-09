@@ -29,10 +29,19 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
+      <Button
+          href="https://github.com/FacundoLizardo/Portfolio2"
+          target="_blank"
+          className="fork-btn-inner"
+          style={{opacity:'0'}}
+      >
+        <div style={{display: 'flex',flexDirection:'row', gap:'5px', fontSize:'1.2em'}}>
+          <CgGitFork style={{fontSize: "1.2em"}}/>
+          <p className="tech-icons-text" style={{fontSize:'2em'}}>This repository</p>
+        </div>
+      </Button>
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-            <b className="purple">F.L</b>
-        </Navbar.Brand>
+
         <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -44,10 +53,13 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className={'navbar-content'} defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <div className={'nav-item-content'}>
+                  <AiOutlineHome style={{marginBottom: "2px"}}/>
+                  Home
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -57,7 +69,10 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <div className={'nav-item-content'}>
+                  <AiOutlineUser style={{marginBottom: "2px"}}/>
+                  About
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -67,10 +82,12 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
+                <div className={'nav-item-content'}>
+                  <AiOutlineFundProjectionScreen
+                    style={{marginBottom: "2px"}}
                 />{" "}
-                Projects
+                  Projects
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -80,25 +97,27 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <div className={'nav-item-content'}>
+                  <CgFileDocument style={{marginBottom: "2px"}}/>
+                  Resume
+                </div>
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
-              <Button
-                  href="https://github.com/FacundoLizardo/Portfolio2"
-                  target="_blank"
-                  className="fork-btn-inner"
-              >
-                <div style={{display: 'flex',flexDirection:'row', gap:'5px', fontSize:'1.2em'}}>
-                  <CgGitFork style={{fontSize: "1.2em"}}/>
-                  <p className="tech-icons-text" style={{fontSize:'2em'}}>This repository</p>
-                </div>
-              </Button>
-            </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
+      <Button
+          href="https://github.com/FacundoLizardo/Portfolio2"
+          target="_blank"
+          className="fork-btn-inner"
+      >
+        <div style={{display: 'flex',flexDirection:'row', gap:'5px', fontSize:'1.2em'}}>
+          <CgGitFork style={{fontSize: "1.2em"}}/>
+          <p className="tech-icons-text" style={{fontSize:'2em'}}>This repository</p>
+        </div>
+      </Button>
     </Navbar>
   );
 }

@@ -88,6 +88,13 @@ button:focus {
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
 }
+.navbar-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 2%;
+}
 
 .navbar-toggler {
   position: relative !important;
@@ -178,7 +185,6 @@ button:focus {
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
-
 }
 
 .navbar-nav .nav-item a {
@@ -201,6 +207,16 @@ button:focus {
   z-index: -1;
   transition: all 0.2s ease-out 0s;
 }
+
+.nav-item-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 5px;
+ }
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
@@ -315,7 +331,7 @@ button:focus {
   opacity:1;
   max-width: 450px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .main-image-avatar1 {
 max-width: 300px;
   }

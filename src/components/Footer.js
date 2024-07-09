@@ -6,6 +6,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import {CgGitFork} from "react-icons/cg";
+import Button from "react-bootstrap/Button";
 
 function Footer() {
   let date = new Date();
@@ -25,7 +27,7 @@ function Footer() {
               <a
                 href="https://github.com/FacundoLizardo"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -35,7 +37,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/facundolizardo/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -45,11 +47,26 @@ function Footer() {
               <a
                 href="https://www.instagram.com/faculizardo640/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
               </a>
+            </li>
+
+            <li>
+              <div className="fork-btn">
+                <Button
+                  href="https://github.com/FacundoLizardo/Portfolio2"
+                  target="_blank"
+                  className="fork-btn-inner"
+                >
+                   <div style={{display: 'flex', flexDirection: 'row', gap: '5px', fontSize: '1.2em'}}>
+                        <CgGitFork style={{fontSize: "1.2em"}}/>
+                        <p className="tech-icons-text" style={{fontSize: '2em'}}>This repository</p>
+                  </div>
+                </Button>
+              </div>
             </li>
           </ul>
         </Col>

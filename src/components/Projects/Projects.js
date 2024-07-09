@@ -23,9 +23,8 @@ function Projects() {
             <ProjectCard
                 imgPath={gip360}
                 isBlog={false}
-                title="GIP 360 (in progress)"
-                description="This project aims to assist small and medium-sized business owners with stock control, sales, taxes, employee management, billing, taxes, and
-                statistics to offer a clear vision of their business operations."
+                title="Easy Ticket (in progress)"
+                description="Currently working on this proyect, an app ."
                 ghLink="https://github.com/FacundoLizardo/Sistema-Ventas"
                 demoLink="https://gip360.vercel.app//"
             />
