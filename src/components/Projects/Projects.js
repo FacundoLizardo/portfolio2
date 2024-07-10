@@ -19,16 +19,16 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-                imgPath={gip360}
-                isBlog={false}
-                title="Easy Ticket (in progress)"
-                description="Currently working on this proyect, an app ."
-                ghLink="https://github.com/FacundoLizardo/Sistema-Ventas"
-                demoLink="https://gip360.vercel.app//"
-            />
-          </Col>
+          {/*<Col md={4} className="project-card">*/}
+          {/*  <ProjectCard*/}
+          {/*      imgPath={gip360}*/}
+          {/*      isBlog={false}*/}
+          {/*      title="Easy Ticket (in progress)"*/}
+          {/*      description="Currently working on this proyect, an app ."*/}
+          {/*      ghLink="https://github.com/FacundoLizardo/Sistema-Ventas"*/}
+          {/*      demoLink="https://gip360.vercel.app//"*/}
+          {/*  />*/}
+          {/*</Col>*/}
           <Col md={4} className="project-card">
             <ProjectCard
                 imgPath={gip360}
