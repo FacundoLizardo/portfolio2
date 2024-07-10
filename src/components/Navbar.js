@@ -29,17 +29,6 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Button
-          href="https://github.com/FacundoLizardo/Portfolio2"
-          target="_blank"
-          className="fork-btn-inner"
-          style={{opacity:'0'}}
-      >
-        <div style={{display: 'flex',flexDirection:'row', gap:'5px', fontSize:'1.2em'}}>
-          <CgGitFork style={{fontSize: "1.2em"}}/>
-          <p className="tech-icons-text" style={{fontSize:'2em'}}>This repository</p>
-        </div>
-      </Button>
       <Container>
 
         <Navbar.Toggle
@@ -104,20 +93,22 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item className={'fork-btn-inner-container'}>
+              <Button
+                href="https://github.com/FacundoLizardo/Portfolio2"
+                target="_blank"
+                className="fork-btn-inner"
+              >
+                <div style={{display: 'flex', flexDirection: 'row', gap: '5px', fontSize: '1.2em'}}>
+                  <CgGitFork style={{fontSize: "1.2em"}}/>
+                  <p className="tech-icons-text" style={{fontSize: '2em'}}>This repository</p>
+                </div>
+              </Button>
+            </Nav.Item>
 
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <Button
-          href="https://github.com/FacundoLizardo/Portfolio2"
-          target="_blank"
-          className="fork-btn-inner"
-      >
-        <div style={{display: 'flex',flexDirection:'row', gap:'5px', fontSize:'1.2em'}}>
-          <CgGitFork style={{fontSize: "1.2em"}}/>
-          <p className="tech-icons-text" style={{fontSize:'2em'}}>This repository</p>
-        </div>
-      </Button>
     </Navbar>
   );
 }

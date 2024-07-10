@@ -799,11 +799,17 @@ scale: 1.05;
   font-size: 1.1em !important;
   padding-top: 10px !important;
 }
-
+.fork-btn-inner-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .fork-btn-inner {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: fit-content;
   background-color: rgba(76, 121, 206, 0.37) !important;
   padding: 0.25rem 1.1rem !important;
