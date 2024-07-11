@@ -327,13 +327,15 @@ button:focus {
 }
 
 .main-image-avatar1{
-  z-index: 99;
   opacity:1;
   max-width: 450px;
+  margin: auto;
 }
 @media (max-width: 1024px) {
   .main-image-avatar1 {
-max-width: 300px;
+    max-width: 300px;
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
   }
 }
 @media (max-width: 767px) {
